@@ -1,0 +1,28 @@
+/*
+  Deixo disponível o css da tag h1 referênte a máquina de escrever
+*/
+
+@font-face {
+  font-family: 'fonteh1';
+  src: url("TravelingTypewriter.ttf"); // fonte com efeito de Máquina de Escrever link -> https://dl.dafont.com/dl/?f=traveling_typewriter
+}
+  
+  h1 {
+    max-width: 640px;
+    font-family: 'fonteh1';
+    font-size: 36pt;
+    color: #fff;
+    position: absolute;
+    top: 38%;
+    left: 20%;
+    transform: translate(-20%,-38%);
+
+  }
+    h1::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 2px;
+    display: inline-block;
+    animation: blink .7s infinite;
+    font-size: 31pt;
+  }
